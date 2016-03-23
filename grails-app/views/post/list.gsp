@@ -6,9 +6,17 @@
   <body>
     <h1>My Posts</h1>
 
-    <g:link controller="post" action="edit">
-      Create a new post
-    </g:link>
+    <p>
+      <g:link controller="post" action="edit">
+        Create a new post
+      </g:link>
+    </p>
+
+    <p>
+      <g:link controller="comment" action="edit">
+        Creat a new comment
+      </g:link>
+    </p>
 
     <g:each in="${posts}" var="post">
       <div>

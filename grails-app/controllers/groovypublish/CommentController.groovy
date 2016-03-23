@@ -3,7 +3,10 @@ package groovypublish
 class CommentController {
 
   def edit = {
-      render(view:'edit', model:[comment:new Comment(), postId:params.postId])
+      def comment = new Comment(params)
+      render(view:'edit', model:[
+                                  comment:new Comment(),
+                                  postId:params.postId])
   }
 
   def save = {
@@ -17,7 +20,7 @@ class CommentController {
       }
   }
 
-    def index() { 
+  def index() {
       render("Hello world")
-    }
+  }
 }
