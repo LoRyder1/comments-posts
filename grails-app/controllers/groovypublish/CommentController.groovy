@@ -17,5 +17,7 @@ class CommentController {
       }
   }
 
-    def index() { }
+    def index() { 
+      render("Hello world")
+    }
 }
