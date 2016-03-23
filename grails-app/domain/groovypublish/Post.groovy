@@ -2,8 +2,6 @@ package groovypublish
 
 class Post {
 
-    
-
     static hasMany = [comments:Comment]
 
     String title
@@ -15,10 +13,10 @@ class Post {
 
     static constraints = {
 
-      title(nullable:false, blank:false, length:1..50)
-      teaser(length:0..100)
-      content(nullable:false, blank:false)
-      lastUpdate(nullable:true)
-      published(nullable:false)
+    //   title(nullable:false, blank:false, length:1..50)
+    //   teaser(length:0..100)
+    //   content(nullable:false, blank:false)
+    //   lastUpdate(nullable:true)
+    //   published(nullable:false)
     }
 }
